@@ -1,0 +1,19 @@
+{
+    "name": "dervis/parasut",
+    "description": "Parasut API V4 for PHP",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Dervis Gelmez",
+            "email": "dervissgelmez@hotmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "autoload": {
+        "psr-4": {
+            "Parasut\\": "src"
+        }
+    },
+    "require": {}
+}
