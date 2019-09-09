@@ -6,10 +6,10 @@
     "authors": [
         {
             "name": "Dervis Gelmez",
-            "email": "dervissgelmez@hotmail.com"
+            "email": "dervisgelmez@hotmail.com"
         }
     ],
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "autoload": {
         "psr-4": {
             "Parasut\\": "src"
