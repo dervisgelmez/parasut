@@ -8,7 +8,7 @@ class Invoice extends Service
 {
     const REQUEST_NAME = 'sales_invoices';
 
-    public function __construct($client, $request)
+    public function __construct($client)
     {
         parent::__construct($client, self::REQUEST_NAME);
     }
@@ -72,6 +72,14 @@ class Invoice extends Service
         );
     }
 
+    public function pdf($id)
+    {
+        $url = 'e_archives/'.$id.'/pdf';
+
+        return $this->client->send(
+            $url
+        );
+    }
 }
 
 

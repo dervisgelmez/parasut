@@ -2,22 +2,15 @@
 
 namespace Parasut;
 
-abstract class Service
+class Service
 {
-    /**
-     * @var Client
-     */
+    /**@var Client $client*/
     protected $client;
-
-    /**
-     * @var Client
-     */
     protected $request;
-
 
     public function __construct($client, $request)
     {
-        $this->client  = $client;
+        $this->client = $client;
         $this->request = $request;
     }
 
@@ -40,7 +33,7 @@ abstract class Service
             $this->show();
         }
         return $this->client->send(
-            $this->request, $id
+            $this->request, (string)$id
         );
     }
 
@@ -69,3 +62,5 @@ abstract class Service
         );
     }
 }
+
+?>

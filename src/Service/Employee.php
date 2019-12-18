@@ -8,7 +8,7 @@ class Employee extends Service
 {
     const REQUEST_NAME = 'employees';
 
-    public function __construct($client, $request)
+    public function __construct($client)
     {
         parent::__construct($client, self::REQUEST_NAME);
     }

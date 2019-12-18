@@ -8,7 +8,7 @@ class Account extends Service
 {
     const REQUEST_NAME = 'accounts';
 
-    public function __construct($client, $request)
+    public function __construct($client)
     {
         parent::__construct($client, self::REQUEST_NAME);
     }

@@ -145,6 +145,14 @@ class Client
         }
     }
 
+    public function getConfig($key = null)
+    {
+        if (!$key) {
+            return $this->config;
+        }
+        return $this->getArray($this->config, $key);
+    }
+
     private function getArray($array, $key = null)
     {
         if (is_null($key)) {
@@ -156,31 +164,10 @@ class Client
         return null;
     }
 
-    public function getConfig($key = null)
-    {
-        if (!$key) {
-            return $this->config;
-        }
-        return $this->getArray($this->config, $key);
-    }
-
-    public function getService($key = null)
-    {
-        if (!$key) {
-            return $this->services;
-        }
-        return $this->getArray($this->services, $key);
-    }
-
     private function generateUrl($request = null)
     {
         $request = ($request != null) ? '/'.$request : null;
         return self::BASE_URL.'/'.$this->getConfig('company_id').$request;
-    }
-
-    public function getToken()
-    {
-        return $this->token;
     }
 }
 

@@ -11,9 +11,6 @@
     ],
     "minimum-stability": "dev",
     "autoload": {
-        "psr-4": {
-            "Parasut\\": "src"
-        }
     },
     "require": {}
 }
