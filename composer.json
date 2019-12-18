@@ -1,6 +1,6 @@
 {
     "name": "dervis/parasut",
-    "description": "Parasut API V4 for PHP",
+    "description": "Parasut api for PHP",
     "type": "library",
     "license": "MIT",
     "authors": [
@@ -11,6 +11,9 @@
     ],
     "minimum-stability": "dev",
     "autoload": {
+        "psr-4": {
+            "parasut\\": "src"
+        }
     },
     "require": {}
 }
