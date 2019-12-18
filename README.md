@@ -1,12 +1,12 @@
+
 # Parasut v4 Client
 
 ## Install
     composer require dervis/parasut
     
 ## Guide 
-###Configuration
 
-Set configuration
+Configuration
 
     include 'vendor/autoload.php';
     use Parasut\Client;
@@ -20,18 +20,14 @@ Set configuration
           "redirect_uri" => "urn:ietf:wg:oauth:2.0:oob"
     ]);
 
-Authorize request
+Authorize
 
     $parasut->authorize();
- 
- 
- -
    
-###Use Service
-open method is called to use services
-
-    $parasut->open('service_name');
-
+   Use Services
+   
+	$parasut->open('service_name');
+	
 Service name list
 * Account
 * Category
@@ -41,16 +37,9 @@ Service name list
 * Product
 * Trackable
  
- 
- -
-   
-###Use Service
-
  > Services have `unique` and `general` methods, open method is called to use services
 
     $parasut->open('service_name')->methods;
-
-
 
 * Account
 * Category
@@ -60,9 +49,7 @@ Service name list
 * Product
 * Trackable
  
- 
- -
- ###General Methods
+ General Methods
  * show()
  
         ->show($filter:array, $page:default(1), $size:default(15));
@@ -80,8 +67,7 @@ Service name list
         ->delete($id:requirement);
 
   
- -
- ###Unique Methods
+ Unique Methods
 * Account
     * General Methods
     * transactions()
@@ -109,7 +95,8 @@ Service name list
     * checkStatus()
     
  
- -
+ 
 
-* [Path Internet Solution](https://www.path.com.tr/)
-    * [Derviş Gelmez](https://twitter.com/dervisgelmez)
+> [Path Internet Solution](https://www.path.com.tr/) [[Derviş Gelmez](https://twitter.com/dervisgelmez)]
+
+
